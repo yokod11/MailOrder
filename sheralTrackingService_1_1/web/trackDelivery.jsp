@@ -20,7 +20,7 @@
     <li><a href="./get-trackingNumber.jsp">Apply for Delivery</a></li>
     <li><a href="./trackDelivery.jsp">Track Delivery</a></li>
 </ul>
-<!-- JSP Body
+<!-- HTML Body
 ---->
 <section>
     <article>
@@ -39,7 +39,7 @@
         </div>
         </article>
   </section>
-  <!-- JSP Body END
+  <!-- HTML Body END
 ---->
 </body>
 <html>
