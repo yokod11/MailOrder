@@ -1,0 +1,57 @@
+
+@startuml
+@enduml
+annotation java.lang.Override
+annotation javax.jws.WebMethod
+class driver.driverClass
+class java.io.IOException
+class java.io.PrintWriter
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.util.Random
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.servlet.ServletException
+class javax.servlet.http.HttpServlet
+class javax.servlet.http.HttpServletRequest
+class javax.servlet.http.HttpServletResponse
+class servlet.getDataServlet
+class servlet.trackingNumberServlet
+interface driver.TrackingServiceInterface
+driver.driverClass ..> java.sql.Connection
+driver.driverClass ..> java.sql.DriverManager
+driver.driverClass ..> java.sql.ResultSet
+driver.driverClass ..> java.sql.SQLException
+driver.driverClass ..> java.sql.Statement
+servlet.getDataServlet ..> java.lang.Override
+servlet.getDataServlet ..> java.io.IOException
+servlet.getDataServlet ..> java.io.PrintWriter
+servlet.getDataServlet ..> java.sql.Connection
+servlet.getDataServlet ..> java.sql.DriverManager
+servlet.getDataServlet ..> java.sql.ResultSet
+servlet.getDataServlet ..> java.sql.SQLException
+servlet.getDataServlet ..> java.sql.Statement
+servlet.getDataServlet ..> java.util.logging.Level
+servlet.getDataServlet ..> java.util.logging.Logger
+servlet.getDataServlet ..> javax.servlet.ServletException
+servlet.getDataServlet --|> javax.servlet.http.HttpServlet
+servlet.getDataServlet ..> javax.servlet.http.HttpServletRequest
+servlet.getDataServlet ..> javax.servlet.http.HttpServletResponse
+servlet.trackingNumberServlet ..> java.lang.Override
+servlet.trackingNumberServlet ..> javax.jws.WebMethod
+servlet.trackingNumberServlet ..> java.io.IOException
+servlet.trackingNumberServlet ..> java.io.PrintWriter
+servlet.trackingNumberServlet ..> java.sql.Connection
+servlet.trackingNumberServlet ..> java.sql.DriverManager
+servlet.trackingNumberServlet ..> java.sql.Statement
+servlet.trackingNumberServlet ..> java.util.Random
+servlet.trackingNumberServlet ..> javax.servlet.ServletException
+servlet.trackingNumberServlet --|> javax.servlet.http.HttpServlet
+servlet.trackingNumberServlet ..> javax.servlet.http.HttpServletRequest
+servlet.trackingNumberServlet ..> javax.servlet.http.HttpServletResponse
+servlet.trackingNumberServlet --|> driver.TrackingServiceInterface
+driver.TrackingServiceInterface ..> java.util.Random
+@enduml

@@ -1,0 +1,191 @@
+
+/* 
+    Created on : 24-Apr-2020, 12:02:32
+    Author     : sheral-annthompson
+*/
+
+body{
+    max-width: 100%;
+    min-width:100%;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+    letter-spacing: 0.15em;
+    background-color: white !important;
+    font-family: Gill Sans Extrabold, sans-serif !important;
+
+}
+
+/* Text styling
+*/
+
+p{
+    margin-left: 33.33%;
+}
+
+h3, h2{
+ margin-left: 33.33%;
+
+}
+
+/*Nav bar stying
+*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkcyan;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #531d51;
+}
+
+/* Form styling
+*/
+
+input[type=submit] {
+    font-family: Gill Sans Extrabold, sans-serif;
+    color: gray;
+    width: 100%;
+    background-color: #efefef;
+    opacity: 0.6;
+
+}
+
+
+input[type=text] {
+    font-family: Gill Sans Extrabold, sans-serif;
+    color: gray;
+    width: 100%;
+    background-color:#efefef;
+    padding:15px;
+
+}
+
+
+input[type=Email] {
+    font-family: Gill Sans Extrabold, sans-serif;
+    color: gray;
+    width: 100%;
+    background-color: #efefef;
+    padding:5px;
+
+}
+
+form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px lightgray;
+    margin-top: 10%;
+}
+
+/*Layout styling
+*/
+
+.container{
+    width: 100%;
+
+
+}
+.column {
+    float: left;
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+column-1 {
+    float: left;
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 50%;
+    line-height: 2.6;
+}
+
+.table{
+    width: 100%;
+}
+
+.center{
+       margin-left: 33.33%; 
+}
+
+
+button{
+    background-color: darkcyan;
+    color: white;
+    width: 200px;
+    height: 70px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.results{
+    margin-top: 100px;
+    box-shadow: 0px 0px 30px 0px lightgray;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content{
+    margin: 20px;
+}
+
+.empty-space{
+    height: 100px !important;
+}
+
+/*Table styling
+*/
+
+table{
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+table, th, td {
+    border: 1px solid darkcyan;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    background-color: darkcyan;
+    color: white;
+}
+
+.img-holder{
+    width: 100%;
+    height: auto;
+}
