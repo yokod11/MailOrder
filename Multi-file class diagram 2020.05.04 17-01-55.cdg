@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="trackingNumberServlet" package="servlet" visibility="public" xPosition="643.0" yPosition="241.0">
+      <Fields>
+        <Field name="myConn" type="Connection" visibility="package"/>
+        <Field name="myStmt" type="Statement" visibility="package"/>
+        <Field name="trackingNumber" type="String" visibility="package"/>
+        <Field name="email" type="String" visibility="package"/>
+        <Field name="dburl" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="generateTrackingNumber" returnType="void" visibility="public"/>
+        <Method name="doPost" returnType="HttpServletResponse" visibility="public">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="getDataServlet" package="servlet" visibility="public" xPosition="643.0" yPosition="481.0">
+      <Fields>
+        <Field name="myConn" type="Connection" visibility="package"/>
+        <Field name="Stmt" type="Statement" visibility="package"/>
+        <Field name="newTrackNum2" type="String" visibility="package"/>
+        <Field name="dburl" type="String" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="doGet" returnType="HttpServletResponse" visibility="public">
+          <Argument type="HttpServletRequest" name="request"/>
+          <Argument type="HttpServletResponse" name="response"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="TrackingServiceInterface" package="driver" visibility="public" xPosition="807.0" yPosition="52.0">
+      <Methods>
+        <Method name="generateTrackingNumber" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="&lt;&lt; trackDelivery.jsp &gt;&gt;" package="" visibility="public" xPosition="47.0" yPosition="498.0">
+      <Fields>
+        <Field name="navagation" type="HTML" visibility="private"/>
+        <Field name="form" type="HTML" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="trackingNumberServlet" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="&lt;&lt; getTrackingNumber.jsp &gt;&gt;" package="" visibility="public" xPosition="319.0" yPosition="275.0">
+      <Fields>
+        <Field name="navagation" type="HTML" visibility="private"/>
+        <Field name="form" type="HTML" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getDataServlet" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="&lt;&lt; index.jsp &gt;&gt;" package="" visibility="public" xPosition="72.0" yPosition="292.0">
+      <Fields>
+        <Field name="navagation" type="HTML" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="&lt;&lt; index.jsp &gt;&gt;" target="&lt;&lt; trackDelivery.jsp &gt;&gt;" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="servlet.trackingNumberServlet" target="driver.TrackingServiceInterface"/>
+    <UseRelation name="" source="&lt;&lt; trackDelivery.jsp &gt;&gt;" target="servlet.getDataServlet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="&lt;&lt; getTrackingNumber.jsp &gt;&gt;" target="servlet.trackingNumberServlet" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="&lt;&lt; index.jsp &gt;&gt;" target="&lt;&lt; getTrackingNumber.jsp &gt;&gt;" sourceCardinality="1..*" targetCardinality="1..*"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
