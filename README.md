@@ -1,11 +1,6 @@
 # MailOrder
 Java Web Application
 
-## Table of contents
-* [General info](#general-info)
-* [Languges](#Languges)
-* [Setup](#setup)
-
 ## General info
 This project is a simple Mail Order Tracker.
 	
@@ -18,10 +13,13 @@ Project is created with:
 * Phpmyadmin
 	
 ## Setup
-To run this project, install it locally on Netbeans and implement GlassFish server.
+To run this project, import it locally on Netbeans and implement GlassFish server.
+Import user.sql file into phpmyadmin using Xampp or equivalent web server
+Run from localhost
 
-```
-$ cd ../lorem
-$ npm install
-$ npm start
-```
+## Test run application
+Go to ./get-trackingNumber.jsp
+Add form parameters and submit.
+Copy generated tracking number. 
+Go to ./trackDelivery.jsp
+Paste copied tracking number and submit to retrieve form parameters form database.
